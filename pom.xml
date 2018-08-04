@@ -4,7 +4,7 @@
 
     <groupId>net.lizhaoweb</groupId>
     <artifactId>parent</artifactId>
-    <version>JL.PARENT.0.0.0.0.1.0.1</version>
+    <version>JL.PARENT.0.0.0.0.1.0.1-SNAPSHOT</version>
 
     <name>Parent</name>
     <url>http://www.lizhaoweb.net</url>
@@ -301,13 +301,6 @@
                     <charset>${project.charset}</charset>
                     <encoding>${project.build.encoding}</encoding>
                     <docencoding>${project.doc.encoding}</docencoding>
-                    <tags>
-                        <tag>
-                            <name>notes</name>
-                            <placement/>
-                            <head>版本</head>
-                        </tag>
-                    </tags>
                 </configuration>
                 <executions>
                     <execution>
@@ -319,6 +312,18 @@
                         <configuration>
                             <charset>${project.charset}</charset>
                             <encoding>${project.build.encoding}</encoding>
+                            <tags>
+                                <tag>
+                                    <name>notes</name>
+                                    <placement/>
+                                    <head>增加特征</head>
+                                </tag>
+                                <tag>
+                                    <name>EMAIL</name>
+                                    <placement/>
+                                    <head>电子邮箱</head>
+                                </tag>
+                            </tags>
                         </configuration>
                     </execution>
                 </executions>
