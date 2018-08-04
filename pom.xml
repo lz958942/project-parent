@@ -191,8 +191,8 @@
         <defaultGoal>clean compile install deploy -U</defaultGoal>
 
 
-        <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
-        <outputDirectory>${basedir}/target/main/classes</outputDirectory>
+        <sourceDirectory>${basedir}/src/java</sourceDirectory>
+        <outputDirectory>${basedir}/target/classes</outputDirectory>
         <resources>
             <resource>
                 <directory>${basedir}/src/main/java</directory>
@@ -304,23 +304,42 @@
                 </configuration>
                 <executions>
                     <execution>
-                        <id>attach-javadocs</id>
+                        <id>attach-javadocs-install</id>
                         <phase>install</phase>
                         <goals>
                             <goal>jar</goal>
                         </goals>
                         <configuration>
-                            <charset>${project.charset}</charset>
-                            <encoding>${project.build.encoding}</encoding>
                             <tags>
                                 <tag>
                                     <name>notes</name>
-                                    <placement/>
-                                    <head>增加特征</head>
+                                    <placement>t</placement>
+                                    <head>信息</head>
                                 </tag>
                                 <tag>
                                     <name>EMAIL</name>
-                                    <placement/>
+                                    <placement>t</placement>
+                                    <head>电子邮箱</head>
+                                </tag>
+                            </tags>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>attach-javadocs-deploy</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <tags>
+                                <tag>
+                                    <name>notes</name>
+                                    <placement>t</placement>
+                                    <head>信息</head>
+                                </tag>
+                                <tag>
+                                    <name>EMAIL</name>
+                                    <placement>t</placement>
                                     <head>电子邮箱</head>
                                 </tag>
                             </tags>
