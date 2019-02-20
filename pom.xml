@@ -65,8 +65,8 @@
         <project.charset>UTF-8</project.charset>
         <project.build.encoding>UTF-8</project.build.encoding>
         <project.doc.encoding>UTF-8</project.doc.encoding>
-        <project.source.jkd.version>1.7</project.source.jkd.version>
-        <project.target.jkd.version>1.7</project.target.jkd.version>
+        <project.source.jdk.version>1.7</project.source.jdk.version>
+        <project.target.jdk.version>1.7</project.target.jdk.version>
 
         <junit.version>4.12</junit.version>
         <slf4j.version>1.7.7</slf4j.version>
@@ -236,8 +236,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.1</version>
                 <configuration>
-                    <source>${project.source.jkd.version}</source>
-                    <target>${project.target.jkd.version}</target>
+                    <source>${project.source.jdk.version}</source>
+                    <target>${project.target.jdk.version}</target>
                     <encoding>${project.build.encoding}</encoding>
                     <verbose>true</verbose>
                     <fork>true</fork>
