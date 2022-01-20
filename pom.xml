@@ -306,6 +306,16 @@
                             <placement/>
                             <head>电子邮件</head>
                         </tag>
+                        <tag>
+                            <name>EMAIL</name>
+                            <placement/>
+                            <head>电子邮件</head>
+                        </tag>
+                        <tag>
+                            <name>date</name>
+                            <placement/>
+                            <head>日期</head>
+                        </tag>
                     </tags>
                 </configuration>
                 <executions>
